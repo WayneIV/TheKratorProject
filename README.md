@@ -32,7 +32,7 @@ The repository includes a minimal Tkinter-based GUI (`krator_gui.py`) as a place
 
 ## Remote Assistant
 
-The project now includes `assistant.py`, a command-line helper for managing remote Linux hosts over SSH. It uses the open-source Paramiko library and supports running individual commands or entering an interactive shell.
+The project now includes `assistant.py`, a command-line helper for managing remote Linux hosts over SSH. It uses the open-source Paramiko library and supports running individual commands or entering an interactive shell. Additional helpers provide file transfer utilities, basic project task tracking, optional webcam capture via OpenCV, and an experimental voice-triggered shell activated by saying **"Krator"**.
 
 ### Usage
 
@@ -40,6 +40,7 @@ Install dependencies first:
 
 ```bash
 pip install paramiko
+pip install opencv-python speechrecognition pyaudio
 ```
 
 Run a single command remotely:
@@ -55,4 +56,15 @@ python assistant.py <host> <user>
 ```
 
 The assistant will prompt for your SSH password if it isn't provided with `--password`.
+
+Additional subcommands:
+
+- `upload <local> <remote>` – copy a file to the host
+- `download <remote> <local>` – fetch a file from the host
+- `project add <desc>` – append a task description to `tasks.txt`
+- `project list` – show all recorded tasks
+- `capture [--file path]` – save a webcam snapshot using OpenCV
+- `wake` – listen for the wake word "Krator" before opening a shell
+
+Pentesting capabilities are **not** included.
 
