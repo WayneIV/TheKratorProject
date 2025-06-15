@@ -29,3 +29,30 @@ Infra & DevOps: GitHub Actions · Docker (optional) · CLI-first design
 ## Krator GUI
 
 The repository includes a minimal Tkinter-based GUI (`krator_gui.py`) as a placeholder interface for future tools. The GUI features a green-on-black style and buttons for planned components such as GeoLocation, IP/Port, Web Scraping, OSINT, Password Cracking (unimplemented) and Bug Bounty utilities.
+
+## Remote Assistant
+
+The project now includes `assistant.py`, a command-line helper for managing remote Linux hosts over SSH. It uses the open-source Paramiko library and supports running individual commands or entering an interactive shell.
+
+### Usage
+
+Install dependencies first:
+
+```bash
+pip install paramiko
+```
+
+Run a single command remotely:
+
+```bash
+python assistant.py <host> <user> "<command>"
+```
+
+Or start an interactive session:
+
+```bash
+python assistant.py <host> <user>
+```
+
+The assistant will prompt for your SSH password if it isn't provided with `--password`.
+
