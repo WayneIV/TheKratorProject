@@ -72,3 +72,18 @@ python vision_assistant.py path/to/image.jpg
 ```
 
 The tool outputs detected objects and a brief, slightly skeptical analysis of any extracted text.
+
+## Krator Assistant Skeleton
+
+This repository now includes an initial code scaffold for a multi-device AI assistant named **Krator**. The new modules are designed to provide presence detection, task management, voice and vision integration, and secure cross-device communication. The main files are:
+
+- `krator_core.py` – central orchestrator
+- `presence_detector.py` – detects when the user is nearby
+- `project_manager.py` – placeholder for task integrations
+- `vision_module.py` – simple camera handling
+- `voice_interface.py` – speech input and output
+- `task_router.py` – routes natural language commands
+- `device_bridge.py` – sends commands between devices
+- `security_layer.py` – stubs for authentication
+
+These files are only skeletons but form the foundation for future development of Krator's assistant capabilities.
