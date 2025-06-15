@@ -25,3 +25,7 @@ UI Framework: React + Tailwind CSS
 
 Infra & DevOps: GitHub Actions · Docker (optional) · CLI-first design
 
+
+## Krator GUI
+
+The repository includes a minimal Tkinter-based GUI (`krator_gui.py`) as a placeholder interface for future tools. The GUI features a green-on-black style and buttons for planned components such as GeoLocation, IP/Port, Web Scraping, OSINT, Password Cracking (unimplemented) and Bug Bounty utilities.
