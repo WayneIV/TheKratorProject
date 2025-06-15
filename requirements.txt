@@ -1,0 +1,8 @@
+opencv-python
+ultralytics
+face_recognition
+pytesseract
+pyzbar
+SpeechRecognition
+pyttsx3
+RPi.GPIO
