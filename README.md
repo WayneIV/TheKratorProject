@@ -9,6 +9,8 @@ The Krator Project is an advanced cybersecurity research lab focused on building
 ⚔️ KRATOROPS (Offense Division)
 Red teaming, exploitation, and lateral movement tools.
 
+Example: `kratorops/port_scanner.py` provides a simple asynchronous port scanner for enumerating open services. Use only on systems you own or have permission to test.
+
 🧷 KRATORSHIELD (Defense Division)
 Cyber awareness apps, honeypots, and real-time endpoint defense.
 
