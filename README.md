@@ -56,3 +56,19 @@ python assistant.py <host> <user>
 
 The assistant will prompt for your SSH password if it isn't provided with `--password`.
 
+
+## Vision Assistant
+
+`vision_assistant.py` adds basic computer vision capabilities using OpenCV and Tesseract. It can:
+
+- Detect faces, eyes and human bodies via Haar cascades
+- Extract text from images with OCR
+- Calculate simple scene metrics such as brightness
+
+Run it against an image file:
+
+```bash
+python vision_assistant.py path/to/image.jpg
+```
+
+The tool outputs detected objects and a brief, slightly skeptical analysis of any extracted text.
