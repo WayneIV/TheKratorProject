@@ -19,3 +19,10 @@ class ProjectManager:
         """Update a task with new notes or status."""
         # TODO: implement update logic via the chosen API
         pass
+
+    def add_or_update_task(self, task: dict) -> None:
+        """Create or update a task using provided data."""
+        tid = task.get("id")
+        notes = task.get("notes", "")
+        if tid:
+            self.update_task(tid, notes)

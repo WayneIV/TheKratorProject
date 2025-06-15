@@ -27,3 +27,12 @@ class VisionModule:
         if self.capture is not None:
             self.capture.release()
             self.capture = None
+
+    def get_current_frame(self):
+        """Return the latest frame, opening the camera if needed."""
+        if self.capture is None:
+            try:
+                self.open()
+            except Exception:
+                return None
+        return self.read_frame()

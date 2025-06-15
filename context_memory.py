@@ -33,6 +33,10 @@ class ContextMemory:
         """Return the most recent events from short-term memory."""
         return list(self.short_term)[-limit:]
 
+    def get_recent_context(self) -> List[Dict[str, str]]:
+        """Alias for ``recent_events`` for API convenience."""
+        return self.recent_events()
+
     # Long-term memory ------------------------------------------------------
     def remember(self, key: str, value: str) -> None:
         """Persist a key/value pair for long-term recall."""

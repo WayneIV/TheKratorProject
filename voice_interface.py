@@ -30,3 +30,10 @@ class VoiceInterface:
         if self.engine:
             self.engine.say(text)
             self.engine.runAndWait()
+
+    def process_command(self, text: str) -> str:
+        """Handle a voice command and return a response string."""
+        if not text:
+            return ""
+        self.speak(text)
+        return f"Processed: {text}"
