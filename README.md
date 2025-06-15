@@ -1,6 +1,6 @@
 # Krator Assistant Framework
 
-Krator is a modular AI assistant framework inspired by JARVIS. The project is
+Krator is a modular AI assistant framework. The project is
 structured as a Python package with pluggable modules for presence detection,
 voice control, project management and automation. The framework targets
 Raspberry Pi and desktop systems.
